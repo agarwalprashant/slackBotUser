@@ -11,6 +11,7 @@ function handleOnAuthenticated(rtmStartData) {
 
 function handleOnMessage(message) {
     console.log(message);
+    console.log("hi");
 
   rtm.sendMessage(message.text, message.channel, function messageSent() {
     // optionally, you can supply a callback to execute once the message has been sent
